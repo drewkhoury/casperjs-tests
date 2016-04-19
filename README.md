@@ -1,3 +1,11 @@
+# Bamboo Tests
+
+A set of test cases for bamboo. You'll need to set some variables so read the files first.
+
+Adapated from:
+
+https://github.com/Lullabot/casperjs_foundation
+
 **This piece of logic has been moved to https://www.drupal.org/project/casperjs**
 
 # Automated testing

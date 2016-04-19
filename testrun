@@ -36,6 +36,9 @@ TEST=${1-.}
 # Remove stored cookies from previous test runs.
 rm -f cookies.txt
 
+#extras='--verbose --log-level=debug'
+extras=''
+
 # Run tests.
-echo casperjs --verbose --cookies-file=cookies.txt test --includes=common.js tests/$TEST --root=`pwd` --url=$URL
-casperjs --verbose --cookies-file=cookies.txt test --includes=common.js tests/$TEST --root=`pwd` --url=$URL
+echo casperjs $extras --xunit=output.json --cookies-file=cookies.txt test --includes=common.js tests/$TEST --root=`pwd` --url=$URL
+casperjs $extras --xunit=output.json --cookies-file=cookies.txt test --includes=common.js tests/$TEST --root=`pwd` --url=$URL
